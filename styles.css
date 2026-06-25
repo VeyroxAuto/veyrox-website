@@ -82,9 +82,9 @@ nav a:hover {
   display: flex;
   align-items: center;
   padding: 96px 6%;
-  background:
-    linear-gradient(90deg, rgba(3,5,9,.98), rgba(3,5,9,.68), rgba(3,5,9,.18)),
-    url("assets/hero-background.png") center/cover no-repeat;
+background:
+  linear-gradient(...),
+  url("hero-background.png") center/cover no-repeat;
   position: relative;
 }
 
