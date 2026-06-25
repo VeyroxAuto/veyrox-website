@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Veyrox Automotive | The Future of Car Buying Is Here</title>
+<meta name="description" content="Veyrox Automotive LLC is an AI-powered automotive marketplace for nationwide vehicle sourcing, smarter financing, better deals, and delivered vehicles." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="header">
+<a class="brand" href="#top"><img src="veyrox-logo.png" alt="Veyrox Automotive logo" /><span>Veyrox Automotive</span></a>
+<nav>
+<a href="#wizard">Find My Vehicle</a><a href="#how">How It Works</a><a href="#premium">Why Veyrox</a><a href="#contact" class="nav-button">Contact</a>
+</nav>
+</header>
+
+<main id="top">
+<section class="hero">
+<div class="hero-content">
+<p class="eyebrow">AI-Powered Automotive Marketplace</p>
+<h1>The Future of Car Buying Is Here.</h1>
+<p class="hero-copy">Tell us your payment, vehicle style, trade, and timeline. Veyrox helps turn that into a smarter vehicle search.</p>
+<div class="hero-buttons"><a class="button primary" href="#wizard">Start Vehicle Finder</a><a class="button secondary" href="#premium">Why Veyrox</a></div>
+<div class="hero-proof">
+<div><strong>Nationwide</strong><span>Vehicle Sourcing</span></div>
+<div><strong>AI-Powered</strong><span>Matching</span></div>
+<div><strong>Finance-First</strong><span>Buying Process</span></div>
+</div>
+</div>
+</section>
+
+<section id="wizard" class="wizard-section">
+<div class="wizard-shell">
+<div class="wizard-intro">
+<p class="eyebrow">Find My Vehicle</p>
+<h2>Build your vehicle request in under 60 seconds.</h2>
+<p>This is the signature Veyrox buying experience. It collects the exact details needed to find better options.</p>
+</div>
+
+<div class="progress-wrap">
+<div class="progress-label"><span id="stepLabel">Step 1 of 7</span><span id="stepTitle">Vehicle Type</span></div>
+<div class="progress-bar"><div id="progressFill"></div></div>
+</div>
+
+<form id="vehicleWizard" class="wizard-card">
+<div class="wizard-step active" data-step="1">
+<h3>What type of vehicle are you looking for?</h3>
+<div class="choice-grid">
+<label><input type="radio" name="vehicleType" value="Truck" required><span>Truck</span></label>
+<label><input type="radio" name="vehicleType" value="SUV"><span>SUV</span></label>
+<label><input type="radio" name="vehicleType" value="Car"><span>Car</span></label>
+<label><input type="radio" name="vehicleType" value="Luxury"><span>Luxury</span></label>
+<label><input type="radio" name="vehicleType" value="Performance"><span>Performance</span></label>
+<label><input type="radio" name="vehicleType" value="EV / Hybrid"><span>EV / Hybrid</span></label>
+</div>
+</div>
+
+<div class="wizard-step" data-step="2">
+<h3>What monthly payment are you trying to stay around?</h3>
+<input name="monthlyBudget" placeholder="Example: $700/month" required />
+<p class="helper">Payment estimates depend on price, credit, term, taxes, fees, down payment, trade equity, and lender approval.</p>
+</div>
+
+<div class="wizard-step" data-step="3">
+<h3>What vehicle do you want?</h3>
+<input name="desiredVehicle" placeholder="Example: Ram 1500, Jeep Wrangler, BMW X5, Tesla Model Y" required />
+<div class="form-row">
+<input name="newUsed" placeholder="New, used, or either?" />
+<input name="preferredYear" placeholder="Preferred year range" />
+</div>
+</div>
+
+<div class="wizard-step" data-step="4">
+<h3>Do you have a trade-in?</h3>
+<div class="choice-grid two">
+<label><input type="radio" name="hasTrade" value="Yes" required><span>Yes</span></label>
+<label><input type="radio" name="hasTrade" value="No"><span>No</span></label>
+</div>
+<textarea name="tradeDetails" rows="4" placeholder="If yes, enter year, make, model, miles, payoff, and condition."></textarea>
+</div>
+
+<div class="wizard-step" data-step="5">
+<h3>Down payment and location</h3>
+<div class="form-row">
+<input name="downPayment" placeholder="Down payment amount" />
+<input name="zipCode" placeholder="ZIP code" required />
+</div>
+<div class="form-row">
+<input name="creditRange" placeholder="Credit range optional" />
+<input name="timeline" placeholder="Buying timeline: today, 7 days, 30 days" />
+</div>
+</div>
+
+<div class="wizard-step" data-step="6">
+<h3>Must-have features</h3>
+<textarea name="features" rows="5" placeholder="Example: leather, 4x4, third row, diesel, low miles, black exterior, warranty, Apple CarPlay."></textarea>
+</div>
+
+<div class="wizard-step" data-step="7">
+<h3>Where should we send your vehicle matches?</h3>
+<div class="form-row">
+<input name="name" placeholder="Full Name" required />
+<input name="phone" placeholder="Phone Number" required />
+</div>
+<input name="email" type="email" placeholder="Email Address" required />
+<textarea name="extraNotes" rows="4" placeholder="Anything else we should know?"></textarea>
+</div>
+
+<div class="wizard-actions">
+<button type="button" class="button secondary" id="prevBtn">Back</button>
+<button type="button" class="button primary" id="nextBtn">Next</button>
+<button type="submit" class="button primary hidden" id="submitBtn">Submit Vehicle Request</button>
+</div>
+</form>
+
+<div id="wizardResult" class="result-card hidden">
+<p class="eyebrow">Request Ready</p>
+<h3>Your Veyrox vehicle request has been prepared.</h3>
+<p>Click the email button below to send it directly to Veyrox Automotive.</p>
+<a id="emailLeadBtn" class="button primary" href="#">Email My Request</a>
+</div>
+</div>
+</section>
+
+<section id="premium" class="section">
+<div class="section-title">
+<p class="eyebrow">Why Veyrox</p>
+<h2>Built like a technology company. Operated with dealership experience.</h2>
+<p>Veyrox combines real automotive sales knowledge with modern technology to help customers buy smarter.</p>
+</div>
+<div class="premium-grid">
+<article class="premium-card large"><h3>AI Vehicle Matching</h3><p>Designed to help match customers with vehicles based on budget, needs, lifestyle, and timeline.</p></article>
+<article class="premium-card"><h3>Nationwide Sourcing</h3><p>Built to support dealer partners, wholesale opportunities, and approved inventory feeds.</p></article>
+<article class="premium-card"><h3>Smarter Financing</h3><p>Focused around payment, down payment, trade value, and realistic buying options.</p></article>
+<article class="premium-card"><h3>Delivered Nationwide</h3><p>A modern buying experience designed for convenience and speed.</p></article>
+</div>
+</section>
+
+<section id="how" class="section dark">
+<div class="section-title"><p class="eyebrow">How It Works</p><h2>A cleaner way to buy your next vehicle.</h2></div>
+<div class="timeline">
+<div class="step"><span>01</span><h3>Tell Us What You Want</h3><p>Share your vehicle, payment goal, trade, down payment, and timeline.</p></div>
+<div class="step"><span>02</span><h3>We Search Smarter</h3><p>Veyrox helps compare potential vehicles from approved inventory sources and partners.</p></div>
+<div class="step"><span>03</span><h3>You Buy With Confidence</h3><p>We help simplify next steps, financing, availability, and delivery options.</p></div>
+</div>
+</section>
+
+<section id="contact" class="section contact">
+<div class="section-title"><p class="eyebrow">Contact</p><h2>Need help right now?</h2><p>Email Veyrox Automotive directly.</p></div>
+<a class="button primary" href="mailto:Veyroxauto@gmail.com">Veyroxauto@gmail.com</a>
+</section>
+</main>
+
+<footer><strong>Veyrox Automotive LLC</strong><p>The Future of Car Buying Is Here.</p><p class="legal">Vehicle availability, pricing, payment estimates, financing, taxes, title, license, fees, shipping, delivery, and terms are subject to change. Financing is subject to lender approval.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
