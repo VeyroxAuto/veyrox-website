@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Veyrox Automotive | The Future of Car Buying Is Here</title>
+  <meta name="description" content="Veyrox Automotive LLC is an AI-powered automotive marketplace built for nationwide vehicle sourcing, smarter financing, better deals, and delivered vehicles." />
+  <meta name="keywords" content="Veyrox Automotive, Veyrox Auto, AI car buying, nationwide vehicle sourcing, auto marketplace, car financing, vehicle delivery" />
+
+  <meta property="og:title" content="Veyrox Automotive" />
+  <meta property="og:description" content="The Future of Car Buying Is Here. AI-powered vehicle sourcing nationwide." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#top">
+      <img src="assets/veyrox-logo.png" alt="Veyrox Automotive logo" />
+      <span>Veyrox Automotive</span>
+    </a>
+
+    <nav>
+      <a href="#how">How It Works</a>
+      <a href="#inventory">Inventory</a>
+      <a href="#ai">Veyrox AI</a>
+      <a href="#contact" class="nav-button">Find My Vehicle</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">AI-Powered Automotive Marketplace</p>
+        <h1>The Future of Car Buying Is Here.</h1>
+        <p class="hero-copy">
+          Veyrox Automotive helps customers source vehicles nationwide, compare better options,
+          structure smarter financing, and simplify the entire buying process.
+        </p>
+        <div class="hero-buttons">
+          <a class="button primary" href="#contact">Find My Vehicle</a>
+          <a class="button secondary" href="#inventory">View Sample Inventory</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div>
+        <strong>Nationwide</strong>
+        <span>Vehicle Sourcing</span>
+      </div>
+      <div>
+        <strong>AI-Powered</strong>
+        <span>Vehicle Matching</span>
+      </div>
+      <div>
+        <strong>Smarter</strong>
+        <span>Financing Support</span>
+      </div>
+      <div>
+        <strong>Delivered</strong>
+        <span>Nationwide</span>
+      </div>
+    </section>
+
+    <section id="how" class="section">
+      <div class="section-title">
+        <p class="eyebrow">How It Works</p>
+        <h2>Tell us your payment. We’ll help find your car.</h2>
+        <p>
+          Veyrox is built around the way customers actually shop: budget, monthly payment,
+          trade value, timeline, and the vehicle they really want.
+        </p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <span>01</span>
+          <h3>Submit Your Request</h3>
+          <p>Tell us what vehicle you want, your preferred payment, down payment, trade, and timeline.</p>
+        </article>
+
+        <article class="card">
+          <span>02</span>
+          <h3>We Source Nationwide</h3>
+          <p>Veyrox helps compare potential vehicles from approved dealer, partner, wholesale, and inventory sources.</p>
+        </article>
+
+        <article class="card">
+          <span>03</span>
+          <h3>Buy With Confidence</h3>
+          <p>We help structure the next steps, financing options, delivery details, and deal comparison.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="inventory" class="section inventory-section">
+      <div class="section-title">
+        <p class="eyebrow">Inventory Preview</p>
+        <h2>Popular vehicles customers are looking for.</h2>
+        <p>
+          These are sample vehicles. Replace them with your real inventory, approved dealer feeds,
+          or auction partner data once integrations are approved.
+        </p>
+      </div>
+
+      <div class="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="truck">Trucks</button>
+        <button class="filter" data-filter="luxury">Luxury</button>
+        <button class="filter" data-filter="performance">Performance</button>
+        <button class="filter" data-filter="ev">EVs</button>
+      </div>
+
+      <div class="vehicle-grid" id="vehicleGrid"></div>
+    </section>
+
+    <section id="ai" class="section split">
+      <div>
+        <p class="eyebrow">Veyrox AI</p>
+        <h2>Automotive intelligence built for buyers.</h2>
+        <p>
+          The long-term Veyrox platform can grow into an AI car-buying assistant, automated follow-up system,
+          vehicle sourcing engine, trade-in tool, and dealer technology platform.
+        </p>
+
+        <ul class="feature-list">
+          <li>AI vehicle search</li>
+          <li>Payment-based matching</li>
+          <li>Trade-in request collection</li>
+          <li>Financing workflow support</li>
+          <li>Dealer and auction partner integrations</li>
+        </ul>
+      </div>
+
+      <div class="glass-panel">
+        <h3>Brand Stack</h3>
+        <p><strong>Company:</strong> Veyrox Automotive LLC</p>
+        <p><strong>Website:</strong> VeyroxAuto.com</p>
+        <p><strong>Email:</strong> Veyroxauto@gmail.com</p>
+        <p><strong>Slogan:</strong> The Future of Car Buying Is Here.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-title">
+        <p class="eyebrow">Start Here</p>
+        <h2>Tell us what you want to drive.</h2>
+        <p>
+          This form currently opens an email to Veyrox Automotive. Later, it can be connected to
+          GoHighLevel, HubSpot, DealerSocket, Google Forms, or another CRM.
+        </p>
+      </div>
+
+      <form id="leadForm">
+        <div class="form-row">
+          <input name="name" placeholder="Full Name" required />
+          <input name="phone" placeholder="Phone Number" required />
+        </div>
+
+        <div class="form-row">
+          <input name="email" type="email" placeholder="Email Address" required />
+          <input name="budget" placeholder="Monthly Budget" />
+        </div>
+
+        <input name="vehicle" placeholder="Vehicle Wanted" />
+        <textarea name="message" rows="5" placeholder="Tell us about your trade, down payment, credit situation, must-have features, and timeline."></textarea>
+
+        <button class="button primary" type="submit">Send Vehicle Request</button>
+      </form>
+
+      <p class="direct-email">
+        Direct Email: <a href="mailto:Veyroxauto@gmail.com">Veyroxauto@gmail.com</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>Veyrox Automotive LLC</strong>
+      <p>The Future of Car Buying Is Here.</p>
+    </div>
+    <p class="legal">
+      Vehicle availability, pricing, payment estimates, financing, taxes, title, license, fees, shipping,
+      delivery, and terms are subject to change. Financing is subject to lender approval. Auction and partner
+      inventory may require verification and inspection. Do not use unauthorized scraping of auction websites;
+      use approved APIs, feeds, dealer partnerships, or written agreements.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

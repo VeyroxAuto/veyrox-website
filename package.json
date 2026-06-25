@@ -1,0 +1,11 @@
+{
+  "name": "veyrox-automotive-website",
+  "version": "1.0.0",
+  "description": "Veyrox Automotive LLC website",
+  "scripts": {
+    "start": "serve ."
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
+}
