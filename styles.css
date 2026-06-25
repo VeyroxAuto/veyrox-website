@@ -53,8 +53,8 @@ a {
 }
 
 .brand img {
-  width: 62px;
-  height: 42px;
+  width: 140px;
+  height: auto;
   object-fit: contain;
 }
 
